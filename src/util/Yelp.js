@@ -38,7 +38,7 @@ return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/busine
             city: business.location.city,
             state: business.location.state_code,
             zipCode: business.location.postal_code,
-            category: business.categories[0],
+            category: business.categories[0].title,
             rating: business.rating,
             reviewCount: business.review_count
           }));
